@@ -38,6 +38,11 @@ def sort_characters(dictionary):
     result_list = []
     for entry in dictionary:
         if entry.isalpha():
+"""
+    This was by and large the only struggle. I converted the dictionary
+    into a list of dictionaries, but omitted the keywords... they are free, and so much easier to sort then! OH DEAR! Well, something learned!!!
+
+"""
             result_list.append({"char": entry, "num": dictionary[entry]})
     result_list.sort(reverse=True, key=sort_on)
     return result_list
